@@ -1,4 +1,4 @@
-package ss5_accessmodifier_static.bai_tap.student;
+package ss5_accessmodifier_static.thuc_hanh.Student;
 
 public class Student {
     private int rollno;

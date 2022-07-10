@@ -1,7 +1,6 @@
 package ss4_oop.thuc_hanh;
 
-public class Rectangle1 {
-    public class Rectangle {
+public class Rectangle {
     double width,height;
     public Rectangle(){
     }
@@ -19,4 +18,4 @@ public class Rectangle1 {
         return  "Rectangle{ width = "+ width + ", height = " + height+ "}";
     }
 }
-}
+

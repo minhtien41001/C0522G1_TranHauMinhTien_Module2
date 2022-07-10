@@ -2,7 +2,7 @@ package ss1_java_introduction.thuc_hanh;
 
 import java.util.Scanner;
 
-public class pt_bac_nhat {
+public class FirstDegreeEquation {
     public static void main(String[] args) {
         System.out.println("Giai phuong trinh bac nhat");
         System.out.println("Cho phuong trinh 'a * x + b = c',Hay nhap hang so: ");

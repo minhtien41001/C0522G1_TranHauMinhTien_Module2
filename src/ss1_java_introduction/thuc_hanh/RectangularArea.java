@@ -3,7 +3,7 @@ package ss1_java_introduction.thuc_hanh;
 import java.sql.SQLOutput;
 import java.util.Scanner;
 
-public class dien_tich_hcn {
+public class RectangularArea {
     public static void main(String[] args) {
         float width;
         float height;

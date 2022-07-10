@@ -1,5 +1,5 @@
 package ss1_java_introduction.thuc_hanh;
-public class khai_bao_bien {
+public class DeclareVariable {
     public static void main(String[] args) {
           int i = 10;
           float f = 20.5f;
