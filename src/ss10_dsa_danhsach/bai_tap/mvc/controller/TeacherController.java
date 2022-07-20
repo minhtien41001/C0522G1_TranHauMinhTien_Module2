@@ -1,7 +1,7 @@
-package ss10_dsa_danhsach.thuc_hanh.mvc.controller;
+package ss10_dsa_danhsach.bai_tap.mvc.controller;
 
-import ss10_dsa_danhsach.thuc_hanh.mvc.service.ITeacherService;
-import ss10_dsa_danhsach.thuc_hanh.mvc.service.impl.TeacherService;
+import ss10_dsa_danhsach.bai_tap.mvc.service.ITeacherService;
+import ss10_dsa_danhsach.bai_tap.mvc.service.impl.TeacherService;
 
 import java.util.Scanner;
 

@@ -1,8 +1,7 @@
-package ss10_dsa_danhsach.thuc_hanh.mvc.service.impl;
+package ss10_dsa_danhsach.bai_tap.mvc.service.impl;
 
-import ss10_dsa_danhsach.thuc_hanh.mvc.model.Student;
-import ss10_dsa_danhsach.thuc_hanh.mvc.service.IPersonService;
-import ss10_dsa_danhsach.thuc_hanh.mvc.service.IStudentService;
+import ss10_dsa_danhsach.bai_tap.mvc.model.Student;
+import ss10_dsa_danhsach.bai_tap.mvc.service.IStudentService;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -50,6 +49,33 @@ public class StudentService implements IStudentService {
         }
     }
 
+    @Override
+    public void findById() {
+        System.out.print("Nhập vào Id cần tìm: ");
+        int id = Integer.parseInt(scanner.nextLine());
+        for (int i = 0; i < studentList.size(); i++) {
+            if (id == studentList.get(i).getId()){
+                System.out.println(studentList.get(i).toString());
+            }
+        }
+    }
+
+    @Override
+    public void findByName() {
+        System.out.println("Nhập vào tên cần tìm: ");
+        String name = scanner.nextLine();
+        boolean flag = false;
+        for (Student student : studentList) {
+            if (student.getName().contains(name)) {
+                System.out.println(student);
+                flag = true;
+            }
+        }
+        if (!flag){
+            System.err.println("không tìm thấy tên này!");
+        }
+    }
+
     public static Student infoStudent() {
         System.out.print("Nhập mã số: ");
         int id = Integer.parseInt(scanner.nextLine());
@@ -72,6 +98,5 @@ public class StudentService implements IStudentService {
         Student student = new Student(id, name, dateOfBirth, gender, nameClass, point);
         return student;
     }
-
 
 }

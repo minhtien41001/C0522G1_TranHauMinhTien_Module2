@@ -1,15 +1,15 @@
-package ss10_dsa_danhsach.thuc_hanh.mvc.model;
+package ss10_dsa_danhsach.bai_tap.mvc.model;
 
-public abstract class Person {
+public class Person {
     private int id;
     private String name;
     private String dateOfBirth;
     private boolean gender;
 
-    public Person() {
+    public Person(){
     }
 
-    public Person(int id, String name, String dateOfBirth, boolean gender) {
+    public Person(int id, String name, String dateOfBirth, boolean gender){
         this.id = id;
         this.name = name;
         this.dateOfBirth = dateOfBirth;
@@ -51,10 +51,10 @@ public abstract class Person {
     @Override
     public String toString() {
         return "Person{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", dateOfBirth='" + dateOfBirth + '\'' +
-                ", gender=" + gender +
+                "id=" + getId() +
+                ", name='" + getName() + '\'' +
+                ", dateOfBirth='" + getDateOfBirth() + '\'' +
+                ", gender=" + isGender() +
                 '}';
     }
 }

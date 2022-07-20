@@ -1,7 +1,7 @@
-package ss10_dsa_danhsach.thuc_hanh.mvc.controller;
+package ss10_dsa_danhsach.bai_tap.mvc.controller;
 
-import ss10_dsa_danhsach.thuc_hanh.mvc.service.IStudentService;
-import ss10_dsa_danhsach.thuc_hanh.mvc.service.impl.StudentService;
+import ss10_dsa_danhsach.bai_tap.mvc.service.IStudentService;
+import ss10_dsa_danhsach.bai_tap.mvc.service.impl.StudentService;
 
 import java.util.Scanner;
 
@@ -11,10 +11,12 @@ public class StudentController {
 
     public void menuStudent() {
         do {
-            System.out.println("1. Thêm mới học sinh \n " +
-                    "2. Xóa học sinh \n " +
+            System.out.println("1. Thêm mới học sinh \n" +
+                    "2. Xóa học sinh \n" +
                     "3. Xem danh sách học sinh \n" +
-                    "4. Quay về menu chính.");
+                    "4. Tìm học sinh theo ID \n" +
+                    "5. Tìm học sinh theo tên \n" +
+                    "6. Quay về menu chính.");
             int choose = Integer.parseInt(scanner.nextLine());
             switch (choose){
                 case 1:
@@ -27,9 +29,14 @@ public class StudentController {
                     iStudentService.displayAllStudent();
                     break;
                 case 4:
+                    iStudentService.findById();
+                    break;
+                case 5:
+                    iStudentService.findByName();
+                    break;
+                case 6:
                     return;
             }
         }while (true);
     }
-    }
-
+}

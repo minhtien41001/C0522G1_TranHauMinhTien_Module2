@@ -1,4 +1,4 @@
-package ss10_dsa_danhsach.thuc_hanh.mvc.model;
+package ss10_dsa_danhsach.bai_tap.mvc.model;
 
 public class Teacher extends Person{
     private String specialize;
@@ -19,10 +19,12 @@ public class Teacher extends Person{
         this.specialize = specialize;
     }
 
+
     @Override
     public String toString() {
         return "Teacher{" +
-                "specialize='" + specialize + '\'' +
+                "specialize='" + getSpecialize() + '\'' +
                 "} " + super.toString();
     }
+
 }

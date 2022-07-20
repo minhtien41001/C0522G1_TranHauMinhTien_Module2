@@ -1,4 +1,4 @@
-package ss10_dsa_danhsach.thuc_hanh.mvc.controller;
+package ss10_dsa_danhsach.bai_tap.mvc.controller;
 
 import java.util.Scanner;
 
@@ -34,6 +34,4 @@ public class MainController {
 
         }while (true);
     }
-
-
 }

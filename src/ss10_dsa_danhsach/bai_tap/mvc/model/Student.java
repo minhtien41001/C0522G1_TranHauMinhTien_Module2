@@ -1,6 +1,6 @@
-package ss10_dsa_danhsach.thuc_hanh.mvc.model;
+package ss10_dsa_danhsach.bai_tap.mvc.model;
 
-public class Student extends Person {
+public class Student extends Person{
     private String nameClass;
     private double point;
 
@@ -29,20 +29,13 @@ public class Student extends Person {
         this.point = point;
     }
 
-//    @Override
-//    public String toString() {
-//        return "Student{" +
-//                "nameClass='" + nameClass + '\'' +
-//                ", point=" + point +
-//                '}';
-//    }
 
 
     @Override
     public String toString() {
         return "Student{" +
-                "nameClass='" + nameClass + '\'' +
-                ", point=" + point +
+                "nameClass='" + getNameClass() + '\'' +
+                ", point=" + getPoint() +
                 "} " + super.toString();
     }
 }

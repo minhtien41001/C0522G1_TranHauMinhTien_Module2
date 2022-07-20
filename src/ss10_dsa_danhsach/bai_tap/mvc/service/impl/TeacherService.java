@@ -1,8 +1,7 @@
-package ss10_dsa_danhsach.thuc_hanh.mvc.service.impl;
+package ss10_dsa_danhsach.bai_tap.mvc.service.impl;
 
-import ss10_dsa_danhsach.thuc_hanh.mvc.model.Teacher;
-import ss10_dsa_danhsach.thuc_hanh.mvc.service.IPersonService;
-import ss10_dsa_danhsach.thuc_hanh.mvc.service.ITeacherService;
+import ss10_dsa_danhsach.bai_tap.mvc.model.Teacher;
+import ss10_dsa_danhsach.bai_tap.mvc.service.ITeacherService;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -70,5 +69,4 @@ public class TeacherService implements ITeacherService {
         Teacher teacher = new Teacher(id, name, dateOfBirth, gender, specialize);
         return teacher;
     }
-    }
-
+}
