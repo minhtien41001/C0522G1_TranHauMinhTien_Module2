@@ -4,21 +4,39 @@ public class StopWatch {
     private long startTime;
     private long endTime;
 
-    public StopWatch() {
+    public StopWatch(){
         System.currentTimeMillis();
     }
 
-    public long start() {
-        return this.startTime = System.currentTimeMillis();
+    public long start(){
+        return this.startTime =System.currentTimeMillis();
     }
-
-    public long stop() {
+    public long stop(){
         return this.endTime = System.currentTimeMillis();
     }
-
-    public long getElapsedTime() {
+    public long getElapsedTime(){
         return this.endTime - this.startTime;
     }
 }
+//    private long startTime;
+//    private long endTime;
+//
+//    public StopWatch() {
+//        System.currentTimeMillis();
+//    }
+//
+//    public long start() {
+//        return this.startTime = System.currentTimeMillis();
+//    }
+//
+//    public long stop() {
+//        return this.endTime = System.currentTimeMillis();
+//    }
+//
+//    public long getElapsedTime() {
+//        return this.endTime - this.startTime;
+//    }
+//}
+
 
 

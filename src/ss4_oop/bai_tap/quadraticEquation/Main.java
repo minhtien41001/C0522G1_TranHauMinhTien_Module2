@@ -3,31 +3,61 @@ package ss4_oop.bai_tap.quadraticEquation;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
+//    public static void main(String[] args) {
+//
+//        Scanner scanner = new Scanner(System.in);
+//
+//        double a;
+//        do {
+//            System.out.println("Nhập a: ");
+//            a = scanner.nextDouble();
+//            if (a == 0) {
+//                System.out.println("a phải khác 0,mời bạn nhập lại:");
+//            }
+//        } while (a == 0);
+//        System.out.println("Nhập b: ");
+//        double b = scanner.nextDouble();
+//        System.out.println("Nhập c: ");
+//        double c = scanner.nextDouble();
+//        QuadraticEquation quadraticEquation = new QuadraticEquation(a,b,c);
+//        double delta = quadraticEquation.getDiscriminant();
+//        if (delta > 0) {
+//            System.out.printf("Phương trình có 2 nghiệm  %f và %f", quadraticEquation.getRoot1(),quadraticEquation.getRoot2());
+//        }else if (delta==0){
+//                System.out.printf("Phương trình có nghiệm kép %f",quadraticEquation.getRoot1());
+//            }
+//        else {
+//            System.out.println("Phương trình vô nghiệm");
+//        }
+//    }
+//}
 
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         double a;
         do {
-            System.out.println("Nhập a: ");
+            System.out.println("Mời bạn nhập a: ");
             a = scanner.nextDouble();
-            if (a == 0) {
-                System.out.println("a phải khác 0,mời bạn nhập lại:");
+            if (a == 0){
+                System.out.println("a phải khác 0,Mời bạn nhập lại: ");
             }
-        } while (a == 0);
-        System.out.println("Nhập b: ");
+        }while (a == 0);
+
+        System.out.println("Mời bạn nhập b: ");
         double b = scanner.nextDouble();
-        System.out.println("Nhập c: ");
+        System.out.println("Mời bạn nhập c: ");
         double c = scanner.nextDouble();
+
         QuadraticEquation quadraticEquation = new QuadraticEquation(a,b,c);
         double delta = quadraticEquation.getDiscriminant();
-        if (delta > 0) {
-            System.out.printf("Phương trình có 2 nghiệm  %f và %f", quadraticEquation.getRoot1(),quadraticEquation.getRoot2());
-        }else if (delta==0){
-                System.out.printf("Phương trình có nghiệm kép %f",quadraticEquation.getRoot1());
-            }
-        else {
-            System.out.println("Phương trình vô nghiệm");
+
+        if (delta > 0){
+            System.out.printf("Phương trình có 2 nghiệm: %f,%f ",quadraticEquation.getRoot1(),quadraticEquation.getRoot2());
+        }else if (delta ==0){
+            System.out.printf("Phương trình có nghiệm kép: %f",quadraticEquation.getRoot1());
+        }else {
+            System.out.println("Phương trình vô nghiệm ");
         }
     }
 }
