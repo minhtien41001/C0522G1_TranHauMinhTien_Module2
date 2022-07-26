@@ -56,6 +56,7 @@ public class StudentService implements IStudentService {
         for (int i = 0; i < studentList.size(); i++) {
             if (id == studentList.get(i).getId()){
                 System.out.println(studentList.get(i).toString());
+                break;
             }
         }
     }

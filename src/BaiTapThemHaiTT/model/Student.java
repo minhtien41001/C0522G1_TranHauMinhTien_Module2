@@ -1,24 +1,24 @@
 package BaiTapThemHaiTT.model;
 
 public class Student extends Person{
+    private String nameClass;
     private double score;
-    private String className;
 
-    public Student(){
-
+    public Student() {
     }
 
-
-
-    public Student(double score, String className) {
+    public Student(int id, String name, String dateOfBitrh, String sex, String nameClass, double score) {
+        super(id, name, dateOfBitrh, sex);
+        this.nameClass = nameClass;
         this.score = score;
-        this.className = className;
     }
 
-    public Student(String id, String name, String dateOfBirth, String sex, double score, String className) {
-        super(id, name, dateOfBirth, sex);
-        this.score = score;
-        this.className = className;
+    public String getNameClass() {
+        return nameClass;
+    }
+
+    public void setNameClass(String nameClass) {
+        this.nameClass = nameClass;
     }
 
     public double getScore() {
@@ -29,24 +29,11 @@ public class Student extends Person{
         this.score = score;
     }
 
-    public String getClassName() {
-        return className;
-    }
-
-    public void setClassName(String className) {
-        this.className = className;
-    }
-
-    @Override
-    public String getinFor() {
-        return String.format("%s,%s,%s,%s,%s,%s\n",this.getId(),this.getName(),this.getDateOfBirth(),this.getSex(),this.getScore(),this.getClassName());
-    }
-
     @Override
     public String toString() {
-        return "Student{ " +super.toString() +
-                " score = " + score +
-                ", className = " + className +
-                '}';
+        return "Student{" +
+                "nameClass='" + getNameClass() + '\'' +
+                ", score=" + getScore() +
+                '}' + super.toString();
     }
 }

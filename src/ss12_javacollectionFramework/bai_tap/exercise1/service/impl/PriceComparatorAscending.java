@@ -8,8 +8,8 @@ public class PriceComparatorAscending implements Comparator<Product>{
 
     @Override
     public int compare(Product o1, Product o2) {
-        return (int) (o1.getPrice() - o2.getPrice());
+        if(o1.getPrice()>o2.getPrice()) {
+            return 1;
+        } else return -1;
     }
-
-
 }

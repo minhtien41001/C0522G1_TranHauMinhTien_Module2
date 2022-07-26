@@ -1,4 +1,14 @@
 package BaiTapThemHaiTT.service;
 
-public interface IStudentService extends IPersonService {
+public interface IStudentService {
+
+    void addStudent();
+
+    void removeStudent();
+
+    void displayALlStudent();
+
+    void findById();
+
+    void findByName();
 }

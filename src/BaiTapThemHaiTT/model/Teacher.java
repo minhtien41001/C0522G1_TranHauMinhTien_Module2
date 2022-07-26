@@ -1,39 +1,28 @@
 package BaiTapThemHaiTT.model;
 
 public class Teacher extends Person{
-    private String specialist;
+    private String specialize;
 
     public Teacher() {
-
     }
 
-
-    public Teacher(String specialist) {
-        this.specialist = specialist;
+    public Teacher(int id, String name, String dateOfBitrh, String sex, String specialize) {
+        super(id, name, dateOfBitrh, sex);
+        this.specialize = specialize;
     }
 
-    public Teacher(String id, String name, String dateOfBirth, String sex, String specialist) {
-        super(id, name, dateOfBirth, sex);
-        this.specialist = specialist;
+    public String getSpecialize() {
+        return specialize;
     }
 
-    public String getSpecialist() {
-        return specialist;
-    }
-
-    public void setSpecialist(String specialist) {
-        this.specialist = specialist;
-    }
-
-    @Override
-    public String getinFor() {
-        return String.format("%s,%s,%s,%s,%s\n", this.getId(), this.getName(), this.getDateOfBirth(), this.getSex(), this.getSpecialist());
+    public void setSpecialize(String specialize) {
+        this.specialize = specialize;
     }
 
     @Override
     public String toString() {
-        return "Teacher{ " + super.toString() +
-                " specialist = " + specialist + '\'' +
-                '}';
+        return "Teacher{" +
+                "specialize='" + getSpecialize() + '\'' +
+                '}' + super.toString();
     }
 }

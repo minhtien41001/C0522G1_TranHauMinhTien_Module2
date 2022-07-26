@@ -1,4 +1,11 @@
 package BaiTapThemHaiTT.service;
 
-public interface ITeacherService extends IPersonService{
+public interface ITeacherService {
+
+    void addTeacher();
+
+    void removeTeacher();
+
+    void displayAllTeacher();
+
 }

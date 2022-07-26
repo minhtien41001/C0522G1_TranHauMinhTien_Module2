@@ -1,8 +1,9 @@
 package ss17_binaryFile_serialization.bai_tap.productManagement.service.impl;
 
-import BaiTapThemHaiTT.exception.DuplicateIDException;
+
 import ss17_binaryFile_serialization.bai_tap.productManagement.model.Product;
 import ss17_binaryFile_serialization.bai_tap.productManagement.service.IProductService;
+import ss17_binaryFile_serialization.bai_tap.productManagement.utils.DuplicateIDException;
 import ss17_binaryFile_serialization.bai_tap.productManagement.utils.ReadWriteFileUtils;
 
 import java.util.List;

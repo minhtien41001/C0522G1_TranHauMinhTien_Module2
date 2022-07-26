@@ -1,27 +1,26 @@
 package BaiTapThemHaiTT.model;
 
-public abstract class Person {
-    private String id;
+public class Person {
+    private int id;
     private String name;
-    private String dateOfBirth;
+    private String dateOfBitrh;
     private String sex;
 
-    public Person(){
-
+    public Person() {
     }
 
-    public Person(String id, String name, String dateOfBirth, String sex) {
+    public Person(int id, String name, String dateOfBitrh, String sex) {
         this.id = id;
         this.name = name;
-        this.dateOfBirth = dateOfBirth;
+        this.dateOfBitrh = dateOfBitrh;
         this.sex = sex;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -33,12 +32,12 @@ public abstract class Person {
         this.name = name;
     }
 
-    public String getDateOfBirth() {
-        return dateOfBirth;
+    public String getDateOfBitrh() {
+        return dateOfBitrh;
     }
 
-    public void setDateOfBirth(String dateOfBirth) {
-        this.dateOfBirth = dateOfBirth;
+    public void setDateOfBitrh(String dateOfBitrh) {
+        this.dateOfBitrh = dateOfBitrh;
     }
 
     public String getSex() {
@@ -49,14 +48,13 @@ public abstract class Person {
         this.sex = sex;
     }
 
-    public abstract String getinFor();
     @Override
     public String toString() {
-        return
-                "  id = " + id +
-                        ", name = " + name  +
-                        ", dateOfBirth = " + dateOfBirth +
-                        ", sex = " + sex ;
-
+        return "Person{" +
+                "id=" + getId() +
+                ", name='" + getName() + '\'' +
+                ", dateOfBitrh='" + getDateOfBitrh() + '\'' +
+                ", sex='" + getSex() + '\'' +
+                '}';
     }
 }
